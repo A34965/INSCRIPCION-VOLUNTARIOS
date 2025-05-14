@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Voluntariado - AFANIAD Maestrat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-2xl font-semibold text-blue-600 mb-6 text-center">Inscripción de Voluntarios/as - AFANIAD Maestrat</h1>
+        <p class="mb-4 text-gray-700">
+            ¡Gracias por tu interés en colaborar con AFANIAD Maestrat! Por favor, completa el siguiente formulario para iniciar tu proceso de voluntariado.
+        </p>
+
+        <form id="formulario-voluntariado" class="space-y-4">
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Datos de la Asociación</h2>
+                <p class="text-gray-600"><strong>NIF:</strong> G12029120</p>
+                <p class="text-gray-600"><strong>Dirección:</strong> Av. Tarragona, 37, Vinaròs</p>
+                <p class="text-gray-600"><strong>Teléfono:</strong> 633 40 20 10</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Datos Personales</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="apellidos" class="block text-gray-700 text-sm font-bold mb-2">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="dni" class="block text-gray-700 text-sm font-bold mb-2">DNI/NIE:</label>
+                        <input type="text" id="dni" name="dni" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="fecha_nacimiento" class="block text-gray-700 text-sm font-bold mb-2">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="direccion" class="block text-gray-700 text-sm font-bold mb-2">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="codigo_postal" class="block text-gray-700 text-sm font-bold mb-2">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="localidad" class="block text-gray-700 text-sm font-bold mb-2">Localidad:</label>
+                        <input type="text" id="localidad" name="localidad" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="provincia" class="block text-gray-700 text-sm font-bold mb-2">Provincia:</label>
+                        <input type="text" id="provincia" name="provincia" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                     <div>
+                        <label for="nacionalidad" class="block text-gray-700 text-sm font-bold mb-2">Nacionalidad:</label>
+                        <input type="text" id="nacionalidad" name="nacionalidad" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="profesion" class="block text-gray-700 text-sm font-bold mb-2">Profesión/Ocupación:</label>
+                        <input type="text" id="profesion" name="profesion"  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="telefono" class="block text-gray-700 text-sm font-bold mb-2">Teléfono de Contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="antecedentes_penales" class="block text-gray-700 text-sm font-bold mb-2">Certificado de Antecedentes Penales:</label>
+                        <select id="antecedentes_penales" name="antecedentes_penales" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            <option value="">Seleccione...</option>
+                            <option value="si">Sí (Adjuntar copia)</option>
+                            <option value="no">No (Se proporcionará información)</option>
+                        </select>
+                    </div>
+                    <div id="file-antecedentes" style="display: none;">
+                        <label for="archivo_antecedentes" class="block text-gray-700 text-sm font-bold mb-2">Adjuntar Certificado:</label>
+                        <input type="file" id="archivo_antecedentes" name="archivo_antecedentes" accept=".pdf" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                         <p class="text-gray-500 text-xs mt-1">Solo se permiten archivos PDF.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Datos de Contacto en Caso de Emergencia</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="nombre_emergencia" class="block text-gray-700 text-sm font-bold mb-2">Nombre y Apellidos:</label>
+                        <input type="text" id="nombre_emergencia" name="nombre_emergencia" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="parentesco_emergencia" class="block text-gray-700 text-sm font-bold mb-2">Parentesco:</label>
+                        <input type="text" id="parentesco_emergencia" name="parentesco_emergencia" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="telefono_emergencia" class="block text-gray-700 text-sm font-bold mb-2">Teléfono de Contacto:</label>
+                        <input type="tel" id="telefono_emergencia" name="telefono_emergencia" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Disponibilidad y Áreas de Interés</h2>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">¿Qué días de la semana tiene disponibilidad?</label>
+                    <div class="grid grid-cols-2 md:grid-cols-7 gap-2">
+                        <div>
+                            <input type="checkbox" id="lunes" name="dias_disponibles[]" value="Lunes" class="mr-2">
+                            <label for="lunes" class="text-gray-700 text-sm">Lunes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="martes" name="dias_disponibles[]" value="Martes" class="mr-2">
+                            <label for="martes" class="text-gray-700 text-sm">Martes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="miercoles" name="dias_disponibles[]" value="Miércoles" class="mr-2">
+                            <label for="miercoles" class="text-gray-700 text-sm">Miércoles</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="jueves" name="dias_disponibles[]" value="Jueves" class="mr-2">
+                            <label for="jueves" class="text-gray-700 text-sm">Jueves</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="viernes" name="dias_disponibles[]" value="Viernes" class="mr-2">
+                            <label for="viernes" class="text-gray-700 text-sm">Viernes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sabado" name="dias_disponibles[]" value="Sábado" class="mr-2">
+                            <label for="sabado" class="text-gray-700 text-sm">Sábado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="domingo" name="dias_disponibles[]" value="Domingo" class="mr-2">
+                            <label for="domingo" class="text-gray-700 text-sm">Domingo</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">¿Qué franja horaria prefiere?</label>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <input type="checkbox" id="mañana" name="franja_horaria[]" value="Mañana" class="mr-2">
+                            <label for="mañana" class="text-gray-700 text-sm">Mañana (9:00 - 14:00)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tarde" name="franja_horaria[]" value="Tarde" class="mr-2">
+                            <label for="tarde" class="text-gray-700 text-sm">Tarde (16:00 - 20:00)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">¿En qué tipo de actividades le gustaría colaborar?</label>
+                    <div class="grid grid-cols-1 gap-2">
+                        <div>
+                            <input type="checkbox" id="actividades_ludicas" name="actividades_interes[]" value="Apoyo en actividades lúdicas y recreativas" class="mr-2">
+                            <label for="actividades_ludicas" class="text-gray-700 text-sm">Apoyo en actividades lúdicas y recreativas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="acompanamiento_salidas" name="actividades_interes[]" value="Acompañamiento en salidas y excursiones" class="mr-2">
+                            <label for="acompanamiento_salidas" class="text-gray-700 text-sm">Acompañamiento en salidas y excursiones</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="talleres_formativos" name="actividades_interes[]" value="Soporte en talleres y actividades formativas" class="mr-2">
+                            <label for="talleres_formativos" class="text-gray-700 text-sm">Soporte en talleres y actividades formativas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tareas_administrativas" name="actividades_interes[]" value="Apoyo en tareas administrativas o de gestión" class="mr-2">
+                            <label for="tareas_administrativas" class="text-gray-700 text-sm">Apoyo en tareas administrativas o de gestión</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="eventos_sensibilizacion" name="actividades_interes[]" value="Colaboración en eventos y campañas de sensibilización" class="mr-2">
+                            <label for="eventos_sensibilizacion" class="text-gray-700 text-sm">Colaboración en eventos y campañas de sensibilización</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="otros" name="actividades_interes[]" value="Otros" class="mr-2">
+                            <label for="otros" class="text-gray-700 text-sm">Otros (Especificar):</label>
+                            <input type="text" id="otros_especificar" name="otros_especificar" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Experiencia y Motivación</h2>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">¿Tiene experiencia previa como voluntario/a?</label>
+                    <div class="flex gap-4">
+                        <div>
+                            <input type="radio" id="experiencia_si" name="experiencia_previa" value="Sí" class="mr-2">
+                            <label for="experiencia_si" class="text-gray-700 text-sm">Sí</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="experiencia_no" name="experiencia_previa" value="No" class="mr-2">
+                            <label for="experiencia_no" class="text-gray-700 text-sm">No</label>
+                        </div>
+                    </div>
+                    <textarea id="descripcion_experiencia" name="descripcion_experiencia" rows="4" placeholder="Describa brevemente su experiencia (si aplica)" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2" style="display: none;"></textarea>
+                </div>
+                <div>
+                    <label for="motivacion" class="block text-gray-700 text-sm font-bold mb-2">¿Por qué desea ser voluntario/a en AFANIAD Maestrat?</label>
+                    <textarea id="motivacion" name="motivacion" rows="4" required placeholder="Máximo 5 líneas" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Compromiso de Formación</h2>
+                <p class="text-gray-700 mb-4">
+                    Mediante la presente, declaro mi compromiso de realizar el taller online de formación para voluntarios/as de AFANIAD Maestrat.
+                    Entiendo que esta formación es obligatoria para poder desempeñar mis funciones como voluntario/a, con el objetivo de garantizar
+                    la calidad del servicio y la seguridad de las personas a las que apoyamos. Me comprometo a completar dicha formación en los
+                    plazos establecidos y a aplicar los conocimientos adquiridos durante mi voluntariado.
+                </p>
+                <div class="flex items-center">
+                    <input type="checkbox" id="compromiso_formacion" name="compromiso_formacion" required class="mr-2">
+                    <label for="compromiso_formacion" class="text-gray-700 text-sm font-bold">Acepto el compromiso de formación</label>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Protección de Datos</h2>
+                <p class="text-gray-700 text-sm">
+                    En cumplimiento de lo dispuesto en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016,
+                    relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (RGPD)
+                    y en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos que
+                    los datos personales facilitados en este formulario serán tratados por AFANIAD Maestrat con la finalidad de gestionar su solicitud de voluntariado,
+                    la organización de las actividades y la comunicación con usted. La base jurídica para el tratamiento de sus datos es su consentimiento. Sus datos no
+                    serán cedidos a terceros, salvo obligación legal. Tiene derecho a acceder, rectificar, suprimir, limitar el tratamiento, oponerse al mismo y a la
+                    portabilidad de sus datos, así como a revocar el consentimiento prestado, dirigiéndose a AFANIAD Maestrat a través del correo electrónico
+                    <a href="mailto:afaniad@afaniadmaestrat.org" class="text-blue-600 hover:underline">afaniad@afaniadmaestrat.org</a> o en la dirección postal Av. Tarragona, 37, Vinaròs.
+                    Puede consultar información adicional y detallada sobre Protección de Datos en nuestra Política de Privacidad disponible en
+                    <a href="https://www.afaniadmaestrat.org/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">www.afaniadmaestrat.org/politica-de-privacidad/</a>.
+                </p>
+                 <div class="flex items-center mt-4">
+                    <input type="checkbox" id="acepto_proteccion_datos" name="acepto_proteccion_datos" required class="mr-2">
+                    <label for="acepto_proteccion_datos" class="text-gray-700 text-sm font-bold">Acepto la política de protección de datos</label>
+                </div>
+            </div>
+
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar Inscripción</button>
+        </form>
+    </div>
+
+    <script>
+        const formulario = document.getElementById('formulario-voluntariado');
+        const experienciaSi = document.getElementById('experiencia_si');
+        const experienciaNo = document.getElementById('experiencia_no');
+        const descripcionExperiencia = document.getElementById('descripcion_experiencia');
+        const antecedentesPenalesSelect = document.getElementById('antecedentes_penales');
+        const fileAntecedentes = document.getElementById('file-antecedentes');
+
+        experienciaSi.addEventListener('change', function() {
+            if (this.checked) {
+                descripcionExperiencia.style.display = 'block';
+            } else {
+                descripcionExperiencia.style.display = 'none';
+            }
+        });
+
+        experienciaNo.addEventListener('change', function() {
+            if (this.checked) {
+                descripcionExperiencia.style.display = 'none';
+            }
+        });
+
+        antecedentesPenalesSelect.addEventListener('change', function() {
+            if (this.value === 'si') {
+                fileAntecedentes.style.display = 'block';
+            } else {
+                fileAntecedentes.style.display = 'none';
+            }
+        });
+
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío por defecto del formulario
+
+            // Validación adicional (puedes agregar más validaciones aquí)
+            if (!formulario.checkValidity()) {
+                alert('Por favor, complete todos los campos obligatorios.');
+                return;
+            }
+
+            // Procesamiento de datos (aquí iría la lógica para enviar los datos a un servidor)
+            const formData = new FormData(formulario);
+            let datos = {};
+            for (let [key, value] of formData.entries()) {
+                if (key.endsWith('[]')) {
+                    // Para checkboxes, agrupar los valores en un array
+                    if (datos[key]) {
+                        datos[key].push(value);
+                    } else {
+                        datos[key] = [value];
+                    }
+                } else {
+                    datos[key] = value;
+                }
+            }
+            console.log(datos); // Muestra los datos en la consola (solo para desarrollo)
+
+            // Simulación de envío exitoso (puedes reemplazar esto con una llamada real a un servidor)
+            alert('¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.');
+            formulario.reset(); // Limpia el formulario
+            descripcionExperiencia.style.display = 'none'; //oculta el textarea de experiencia
+            fileAntecedentes.style.display = 'none'; // oculta la subida del archivo
+        });
+    </script>
+</body>
+</html>
